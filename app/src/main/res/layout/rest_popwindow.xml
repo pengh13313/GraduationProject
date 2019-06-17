@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popupwindow_style">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/WorkHournumberPicker"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp" />
+
+
+        <TextView
+            android:id="@+id/hour_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小时"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/WorkHournumberPicker"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分钟后休息"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/WorkMinutenumberPicker"
+            android:layout_marginLeft="15dp" />
+            <NumberPicker
+            android:id="@+id/WorkMinutenumberPicker"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hour_text"
+
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在工作"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+             />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_workingRest"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>
